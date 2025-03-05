@@ -8,6 +8,7 @@ yfinance
 matplotlib
 plotly
 seaborn
+ta
 
 # App
 streamlit

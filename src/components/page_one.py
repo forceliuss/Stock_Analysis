@@ -4,9 +4,9 @@ import yfinance as yf
 import time
 #from yahooquery import get_symbols_by_exchange
 from datetime import datetime, timedelta
-import pytz
-import ta
-import os
+#import pytz
+#import ta
+#import os
 from utils.helpers import format_currency, format_percentage, get_top_15_tickers, get_all_tickers_with_sectors
 
 # Fetch stock data based on the ticker, period, and interval
@@ -149,10 +149,10 @@ def calculate_metrics(data, ticker=None):
     return last_close, change, pct_change, high, low, volume
 
 # Add simple moving average (SMA) and exponential moving average (EMA) indicators
-def add_technical_indicators(data):
-    data['SMA_20'] = ta.trend.sma_indicator(data['Close'], window=20)
-    data['EMA_20'] = ta.trend.ema_indicator(data['Close'], window=20)
-    return data
+# def add_technical_indicators(data):
+#     data['SMA_20'] = ta.trend.sma_indicator(data['Close'], window=20)
+#     data['EMA_20'] = ta.trend.ema_indicator(data['Close'], window=20)
+#     return data
 
 
 

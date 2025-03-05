@@ -2,7 +2,7 @@ import streamlit as st
 import os
 import yfinance as yf
 import seaborn as sns
-from yfinance import EquityQuery
+#from yfinance import EquityQuery
 import pandas as pd
 import plotly.express as px
 from datetime import datetime, timedelta, date
